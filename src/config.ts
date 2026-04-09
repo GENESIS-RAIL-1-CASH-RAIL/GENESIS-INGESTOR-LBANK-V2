@@ -1,6 +1,6 @@
 export const CONFIG = {
   EXCHANGE: "LBANK_V2" as const,
-  SOURCE: "lbank-v2" as const,
+  SOURCE: "lbank" as const,
   TYPE: "CEX" as const,
   CHAIN: "multi" as const,
   PORT: parseInt(process.env.PORT || "10473", 10),
