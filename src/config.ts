@@ -5,7 +5,7 @@ export const CONFIG = {
   CHAIN: "multi" as const,
   PORT: parseInt(process.env.PORT || "10473", 10),
   SERVICE_NAME: "GENESIS-INGESTOR-LBANK-V2",
-  API_URL: "https://api.lbank.info/v2/ticker/24hr.do", // API URL FIXED 2026-04-10 — was DNS ENOTFOUND api.lbank.com
+  API_URL: "https://api.lbank.info/v2/ticker.do?symbol=all", // API URL FIXED 2026-04-10 — was 24hr, need ticker with symbol=all for all pairs
   TICKER_URL: "",
   INGESTION_GATE_URL: process.env.INGESTION_GATE_URL || "http://genesis-ingestion-gate:8700/ingest",
   FETCH_TIMEOUT_MS: parseInt(process.env.FETCH_TIMEOUT_MS || "10000", 10),
